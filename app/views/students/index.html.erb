@@ -1,0 +1,8 @@
+<form action="students" method="get">
+<input type="search" name="query" id="query">
+<input type="submit" value="search">
+</form>
+
+<% @students.each do |student| %>
+  <%= render 'student', student: student %>
+<% end %>
